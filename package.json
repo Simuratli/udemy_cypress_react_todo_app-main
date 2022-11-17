@@ -19,6 +19,6 @@
         "build": "react-scripts build",
         "eject": "react-scripts eject",
         "cy:run": "npx cypress run --record --key 46167b86-e716-45d2-b336-f1fc9eec02ec",
-        "build:and:tests": "start-server-and-test start http://localhost:3000 cy:run"
+        "build:and:tests": "npm start http://localhost:3000 cy:run"
     }
 }

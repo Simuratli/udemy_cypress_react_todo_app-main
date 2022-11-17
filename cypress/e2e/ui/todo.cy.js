@@ -8,8 +8,8 @@ describe('Todo UI testing', () => {
   it('should add new todo correctly', () => {
     cy.intercept('POST', 'http://localhost:8080/todos/', 'hello');
     cy.addNewToDo('First todo');
-    cy.get('.todo-ite').last().should('contain.text', 'First todo');
-    cy.log('hello');
+    cy.get('.todo-item').last().should('contain.text', 'First todo');
+    cy.log('hell');
   });
 
   it('should be able to toggle status of todo', () => {
